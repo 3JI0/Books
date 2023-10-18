@@ -4,9 +4,9 @@
 {% block content %}
         <h1>List of, {{ content.Book }}!</h1>
         <a href="{{ url_for('json') }}">JSON_DATA</a>
-        {% for lis in list_books %}
+        {% for u in user %}
         <div>
-            <p> Autor: <b>{{ lis.author }}</b> Book: {{ lis.book }}</p>
+            <p> Autor: <b>{{ u.author }}</b> Book: {{ u.books }}</p>
         </div>
         {% endfor %}
 {% endblock %}
